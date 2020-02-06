@@ -1,4 +1,4 @@
-function objectCreate (obj, props = null) {
+Object.prototype.objectCreate = function (obj, props = null) {
   function Create() {};
   Create.prototype = obj;
   const newObject  = new Create();
